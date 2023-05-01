@@ -1,0 +1,14 @@
+
+WhelanLabs SearchEngine Manager
+Copyright 2009 John Whelan
+
+This product includes software (Lucene and Nutch Java libraries) developed by
+The Apache Software Foundation (http://www.apache.org/).
+
+This product includes software (Swingworker and AppFramework Java libraries)
+developed by The Sun Microsystems, Inc. (https://swingworker.dev.java.net/ and
+https://appframework.dev.java.net/).
+
+The Windows Installer is built with the Nullsoft Scriptable Install Sysem
+(NSIS), which is open source software.  The original software and related
+information is available at http://nsis.sourceforge.net.

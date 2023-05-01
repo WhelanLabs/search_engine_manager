@@ -1,0 +1,22 @@
+WhelanLabs SearchEngine Manager
+
+Change log - v2.0
+=====================================================
+1. Added GUI support for HTTP proxies.
+2. Added GUI support for stopping (aborting) crawls.
+3. Added GUI support for crawling sites which require login.
+4. Added GUI support for Advanced Filter Criteria.
+5. Added GUI support for Crawler Monitoring and Reporting.
+6. Added GUI support for probable infinite loop filtering in crawling.
+7. Updated Help and Turorials
+8. Improved Installer and Uninstaller
+9. Improved robustness (Fixes self on restart if system crashes.)
+
+Change log - v2.1
+=====================================================
+1. Updated Nutch from 1.0-dev (build 2008-10-28) to 1.1-dev (build 2009-09-09)
+2. update Tomcat from XXX to XXX.
+3. Fixed bugs related to running in non-English locale.
+4. Fixed bug in uninstaller. (Uninstall fails to run completely clean when running app.)
+5. Added support for scheduled crawls.
+6. Added support for automatic startup on reboot.

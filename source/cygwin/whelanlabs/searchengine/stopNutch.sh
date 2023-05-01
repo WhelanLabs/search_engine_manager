@@ -1,0 +1,3 @@
+#!/bin/sh
+echo shutting down Tomcat...
+/whelanlabs/searchengine/tomcat/bin/shutdown.sh &

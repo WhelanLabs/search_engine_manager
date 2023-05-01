@@ -1,0 +1,3 @@
+nsisStartMenu -- Small NSIS plugin for ensuring a given order of shortcuts in Start Menu
+Web site: http://wiz0u.free.fr/prog/nsisStartMenu
+

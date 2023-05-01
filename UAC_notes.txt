@@ -1,0 +1,31 @@
+http://4sysops.com/archives/vista%E2%80%99s-uac-8-ways-how-to-elevate-an-application-to-run-it-with-administrator-rights/
+
+
+whoami | find " "
+
+
+
+
+@echo off
+
+echo "started" > C:\WhelanLabs\results.out
+
+ver | find "Version 5.1"
+if errorlevel 1 goto NotXP
+echo "Running XP" >> C:\WhelanLabs\results.out
+net localgroup administrators | find "%USERNAME%"
+if errorlevel 1 goto end
+echo "...with administrative privlidges" >> C:\WhelanLabs\results.out
+goto end
+
+:NotXP
+ver | find "Version 6.0"
+if errorlevel 1 goto end
+echo "Running Vista" >> C:\WhelanLabs\results.out
+whoami /groups | find "BUILTIN\Administrators" | find "Enabled group"
+if errorlevel 1 goto end
+echo "...with administrative privlidges" >> C:\WhelanLabs\results.out
+goto end
+
+:end
+echo "done"  >> C:\WhelanLabs\results.out

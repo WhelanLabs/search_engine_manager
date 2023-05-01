@@ -1,0 +1,68 @@
+<project name="MyProject" default="buildOutput" basedir=".">
+    <description>
+        Populate contents for an install image.
+    </description>
+  <!-- set global properties for this build -->
+  <property name="src" location="source"/>
+  <property name="dist"  location="output"/>
+
+  <target name="buildOutput">
+    <mkdir dir="${dist}"/>
+    
+    <copy todir="${dist}">
+      <fileset dir="${src}" casesensitive="yes">
+        <include name="*.*"/>
+      </fileset>
+    </copy>
+    
+    <copy todir="${dist}/adminUI/SearchEngine_v1.0/dist">
+      <fileset dir="${src}/adminUI/SearchEngine_v1.0/dist"/>
+    </copy>
+    <copy todir="${dist}/config">
+      <fileset dir="${src}/config"/>
+    </copy>
+    
+    <copy todir="${dist}/helpText">
+      <fileset dir="${src}/helpText"/>
+    </copy>
+    <copy todir="${dist}/scripts">
+      <fileset dir="${src}/scripts"/>
+    </copy>
+    <copy todir="${dist}/AutomatedAdministration">
+      <fileset dir="${src}/AutomatedAdministration"/>
+    </copy>
+    <copy todir="${dist}/cygwin">
+      <fileset dir="${src}/cygwin">
+        <exclude name="**/nutch/**"/>
+      </fileset>
+    </copy>
+    <copy todir="${dist}/cygwin/whelanlabs/searchengine/nutch">
+      <fileset dir="${src}/ThirdParty/nutch-2009-09-09_05-20-05">
+        <exclude name="**/nutch/src/**"/>
+        <exclude name="**/whelanlabs/searchengine/nutch/*.war"/>
+      </fileset>
+    </copy>
+    <copy todir="${dist}/cygwin/whelanlabs/searchengine/nutch/conf" overwrite="true">
+      <fileset dir="${src}/nutch_overrides/conf"/>
+    </copy>
+    
+    <copy todir="${dist}/cygwin/whelanlabs/searchengine/tomcat">
+      <fileset dir="${src}/ThirdParty/apache-tomcat-6.0.20">
+        <exclude name="/webapps/ROOT/"/>
+      </fileset>
+    </copy>
+    
+    <copy todir="${dist}/cygwin/whelanlabs/searchengine/tomcat/conf" overwrite="true">
+      <fileset dir="${src}/tomcat_overrides/conf"/>
+    </copy>
+    
+    <unzip src="${src}/ThirdParty/nutch-2009-09-09_05-20-05/nutch-2009-09-09_05-20-05.war" 
+           dest="${dist}/cygwin/whelanlabs/searchengine/tomcat/webapps/ROOT"/>
+    <delete file="${dist}/cygwin/whelanlabs/searchengine/tomcat/webapps/nutch-2009-09-09_05-20-05.war"/>
+
+  </target>
+
+  <target name="clean" description="clean up" >
+    <delete dir="${dist}"/>
+  </target>
+</project>

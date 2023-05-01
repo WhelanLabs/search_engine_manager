@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+<property>
+  <name>http.agent.name</name>
+  <value>WhelanLabs</value>
+  <description>HTTP 'User-Agent' request header. MUST NOT be empty - 
+  please set this to a single word uniquely related to your organization.
+
+  NOTE: You should also check other related properties:
+
+	http.robots.agents
+	http.agent.description
+	http.agent.url
+	http.agent.email
+	http.agent.version
+
+  and set their values appropriately.
+
+  </description>
+</property>
+
+<property>
+  <name>http.agent.description</name>
+  <value>WhelanLabs Web Crawler Agent</value>
+  <description>Further description of our bot- this text is used in
+  the User-Agent header.  It appears in parenthesis after the agent name.
+  </description>
+</property>
+
+<property>
+  <name>http.agent.url</name>
+  <value>http://www.whelanlabs.com/Searchengine</value>
+  <description>A URL to advertise in the User-Agent header.  This will 
+   appear in parenthesis after the agent name. Custom dictates that this
+   should be a URL of a page explaining the purpose and behavior of this
+   crawler.
+  </description>
+</property>
+
+<property>
+  <name>http.agent.email</name>
+  <value>SearchEngine@whelanlabs.com</value>
+  <description>An email address to advertise in the HTTP 'From' request
+   header and User-Agent header. A good practice is to mangle this
+   address (e.g. 'info at example dot com') to avoid spamming.
+  </description>
+</property>
+
+<property>
+  <name>http.useHttp11</name>
+  <value>true</value>
+  <description>NOTE: at the moment this works only for protocol-httpclient.
+  If true, use HTTP 1.1, if false use HTTP 1.0 .
+  </description>
+</property>
+
+<property>
+  <name>http.useHttp11</name>
+  <value>true</value>
+  <description>NOTE: at the moment this works only for protocol-httpclient.
+  If true, use HTTP 1.1, if false use HTTP 1.0 .
+  </description>
+</property>
+
+<property>
+  <name>http.content.limit</name>
+  <value>-1</value>
+  <description>The length limit for downloaded content, in bytes.
+  If this value is nonnegative (>=0), content longer than it will be truncated;
+  otherwise, no truncation at all.
+  </description>
+</property>
+
+<property>
+  <name>ftp.password</name>
+  <value>@nutch_admin_email@</value>
+  <description>ftp login password.</description>
+</property>
+
+<property>
+  <name>db.ignore.internal.links</name>
+  <value>false</value>
+  <description>If true, when adding new links to a page, links from
+  the same host are ignored.  This is an effective way to limit the
+  size of the link database, keeping only the highest quality
+  links.
+  </description>
+</property>
+
+<property>
+  <name>db.max.outlinks.per.page</name>
+  <value>1000</value>
+  <description>The maximum number of outlinks that we'll process for a page.
+  If this value is nonnegative (>=0), at most db.max.outlinks.per.page outlinks
+  will be processed for a page; otherwise, all outlinks will be processed.
+  </description>
+</property>
+
+<property>
+  <name>db.max.anchor.length</name>
+  <value>1000</value>
+  <description>The maximum number of characters permitted in an anchor.
+  </description>
+</property>
+
+<property>
+  <name>fetcher.server.delay</name>
+  <value>2.0</value>
+  <description>The number of seconds the fetcher will delay between 
+   successive requests to the same server.</description>
+</property>
+
+<property>
+  <name>fetcher.threads.per.host</name>
+  <value>5</value>
+  <description>This number is the maximum number of threads that
+    should be allowed to access a host at one time.</description>
+</property>
+
+<property>
+  <name>fetcher.threads.per.host.by.ip</name>
+  <value>false</value>
+  <description>If true, then fetcher will count threads by IP address,
+  to which the URL's host name resolves. If false, only host name will be
+  used. NOTE: this should be set to the same value as
+  "generate.max.per.host.by.ip" - default settings are different only for
+  reasons of backward-compatibility.</description>
+</property>
+
+<property>
+  <name>indexer.minMergeDocs</name>
+  <value>100</value>
+  <description>This number determines the minimum number of Lucene
+  Documents buffered in memory between Lucene segment merges. Larger
+  values increase indexing speed and increase RAM usage.
+  </description>
+</property>
+
+<property>
+  <name>plugin.includes</name>
+  <value>protocol-httpclient|urlfilter-regex|parse-(text|html|js|msexcel|mspowerpoint|msword|oo|pdf|rss|swf|zip)|index-(basic|anchor)|query-(basic|more|site|url)|summary-basic|scoring-opic|urlnormalizer-(pass|regex|basic)</value>
+  <description>Regular expression naming plugin directory names to
+  include.  Any plugin not matching this expression is excluded.
+  In any case you need at least include the nutch-extensionpoints plugin. By
+  default Nutch includes crawling just HTML and plain text via HTTP,
+  and basic indexing and search plugins. In order to use HTTPS please enable 
+  protocol-httpclient, but be aware of possible intermittent problems with the 
+  underlying commons-httpclient library.
+  </description>
+</property>
+
+
+
+</configuration>

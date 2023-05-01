@@ -1,0 +1,58 @@
+
+"A Windows-based Internet Search Engine"
+
+
+The application is built on industry standard components (Apache Nutch and Apache Tomcat), has a simple installation process, is fully integrated into Windows (start menu access, uninstaller), has decent on-line documentation (which includes flash demos and links to additional component documentation), and an on-line forum for users. 
+
+For a cost-conscious organization, this is a good alternative to a commercial search appliance . Runs on Microsoft Windows XP and above.
+
+
+Version 1.1 enhancements:
+*   Fixed Vista install bug, and vista run-time bugs.
+*   Enhanced GUI to handle 120 DPI monitors (in addition to 96 DPI monitors)
+*   Added descriptive error messages for startup. (Insufficient permissions, spaces in user name)
+*   Minor UI enhancements
+
+
+65.9 MB
+WhelanLabs Search Engine Manager
+http://www.whelanlabs.com/files/WhelanLabs_SearchEngineManager_Install_v1.0.exe
+http://whelanlabs.home.comcast.net/~whelanlabs/files/WhelanLabs_SearchEngineManager_Install_v1.0.exe
+http://www.whelanlabs.com/files/WhelanLabs_SearchEngineManager_v1.1B1_Install.exe
+http://www.whelanlabs.com/files/WhelanLabs_SearchEngineManager_Install_v1.1.exe
+search, search engine, crawler
+
+http://www.whelanlabs.com/files/WLSEM10.JPG
+http://www.whelanlabs.com/files/WLSEM11.JPG
+http://www.whelanlabs.com/files/whelanlabs.JPG
+
+1.0 submissions:
+http://www.freewarefiles.com
+http://www.download.com
+http://www.brothersoft.com
+
+http://www.softpedia.com/ - not used
+
+2.0 submission:
+65.6 MB
+
+http://www.whelanlabs.com/files/WhelanLabs_SearchEngineManager_Install_v2.0.exe
+http://www.whelanlabs.com/files/WLSEM20.JPG
+http://www.whelanlabs.com/files/WLSEM20_1024x768.JPG
+http://www.whelanlabs.com/content/SearchEngineManager20.htm
+
+
+http://www.freewarefiles.com
+http://www.brothersoft.com
+http://www.download.com
+
+http://www.freewarefiles.com/WhelanLabs-Search-Engine-Manager_program_47202.html
+
+2.1 submission:
+80.6 MB
+
+http://www.whelanlabs.com/files/WhelanLabs_SearchEngineManager_Install_v2.1.exe
+http://www.whelanlabs.com/files/WLSEM20.JPG
+http://www.whelanlabs.com/files/WLSEM20_1024x768.JPG
+http://www.whelanlabs.com/content/SearchEngineManager.htm
+

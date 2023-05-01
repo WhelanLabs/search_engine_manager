@@ -1,0 +1,12 @@
+WhelanLabs SearchEngine Manager v2.0
+Change log
+=====================================================
+1. Added GUI support for HTTP proxies.
+2. Added GUI support for stopping (aborting) crawls.
+3. Added GUI support for crawling sites which require login.
+4. Added GUI support for Advanced Filter Criteria.
+5. Added GUI support for Crawler Monitoring and Reporting.
+6. Added GUI support for probable infinite loop filtering in crawling.
+7. Updated Help and Turorials
+8. Improved Installer and Uninstaller
+9. Improved robustness (Fixes self on restart if system crashes.)
