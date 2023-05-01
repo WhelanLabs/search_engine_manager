@@ -1,6 +1,7 @@
 
 "A Windows-based Internet Search Engine"
 
+A Windows-based Internet Search Engine ideally suited for cost-conscious organizations who have private-network content that needs to be searchable by local users. (For example, this could be used as by employees of a company to search corporate web servers.) Supports indexing of text, html, JavaScript, Microsoft Excel, Microsoft PowerPoint, Microsoft Word, OpenOffice, pdf, rss, swf, and zip files.
 
 The application is built on industry standard components (Apache Nutch and Apache Tomcat), has a simple installation process, is fully integrated into Windows (start menu access, uninstaller), has decent on-line documentation (which includes flash demos and links to additional component documentation), and an on-line forum for users. 
 
